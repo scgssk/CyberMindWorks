@@ -128,6 +128,7 @@ const CreateJobModal = ({ onClose, onRefresh }) => {
                 required
                 className="w-full border border-[#D0D5DD] rounded-md p-3 text-sm text-[#222222] font-bold pr-8"
               >
+                <option value="">Select Job Type</option>
                 <option value="Internship">Internship</option>
                 <option value="FullTime">Full Time</option>
                 <option value="PartTime">Part Time</option>
