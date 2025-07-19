@@ -8,7 +8,7 @@ const app = express();
 
 connectDB();
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://your-vercel-domain.vercel.app'],
+  origin: ['http://localhost:3000', 'https://cyber-mind-works-chi.vercel.app/'],
   credentials: true,
 };
 app.use(cors(corsOptions));
