@@ -18,14 +18,14 @@ const Filters = ({
   return (
     <div className="bg-white py-5 border-none flex flex-wrap md:flex-nowrap justify-center gap-6 w-full font-[400]">
       {/* Search Input */}
-      <div className="flex items-center gap-5 flex-grow md:flex-grow-0">
+      <div className="flex items-center justify-center gap-5 flex-grow md:flex-grow-0">
         <img src={searchIcon} alt="Search" className="w-5 h-5 object-contain" />
         <input
           type="text"
           placeholder="Search By Job Title, Role"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="text-sm text-gray-700 bg-transparent outline-none w-60 placeholder-gray-500"
+          className="text-sm text-gray-700 bg-transparent outline-none w-50 lg:w-60 placeholder-gray-500"
         />
       </div>
 
