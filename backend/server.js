@@ -7,11 +7,7 @@ dotenv.config();
 const app = express();
 
 connectDB();
-const corsOptions = {
-  origin: ['http://localhost:3000', 'https://cyber-mind-works-chi.vercel.app/'],
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 app.use('/api/jobs', require('./routes/jobRoutes'));
