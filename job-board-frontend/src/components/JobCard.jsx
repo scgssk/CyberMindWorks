@@ -68,7 +68,7 @@ const JobCard = ({ job }) => {
       <div className="flex flex-wrap text-xs text-gray-600 font-medium gap-3 mb-3">
         <div className="flex items-center gap-1">
           <img
-            src="/icons/user.png"
+            src="/user.png"
             alt="experience"
             className="w-[14px] h-[14px]"
           />
@@ -76,7 +76,7 @@ const JobCard = ({ job }) => {
         </div>
         <div className="flex items-center gap-1">
           <img
-            src="/icons/location.png"
+            src="/location.png"
             alt="location"
             className="w-[14px] h-[14px]"
           />
@@ -84,7 +84,7 @@ const JobCard = ({ job }) => {
         </div>
         <div className="flex items-center gap-1">
           <img
-            src="/icons/money.png"
+            src="/money.png"
             alt="salary"
             className="w-[14px] h-[14px]"
           />
