@@ -1,7 +1,7 @@
 import { formatDistanceToNowStrict } from "date-fns";
-import { FaUserAlt } from "react-icons/fa";
-import { MdLocationOn } from "react-icons/md";
-import { GiMoneyStack } from "react-icons/gi";
+// import { FaUserAlt } from "react-icons/fa";
+// import { MdLocationOn } from "react-icons/md";
+// import { GiMoneyStack } from "react-icons/gi";
 
 const JobCard = ({ job }) => {
   const timeAgoRaw = formatDistanceToNowStrict(new Date(job.createdAt), {
@@ -67,15 +67,27 @@ const JobCard = ({ job }) => {
       {/* Job Info Row */}
       <div className="flex flex-wrap text-xs text-gray-600 font-medium gap-3 mb-3">
         <div className="flex items-center gap-1">
-          <FaUserAlt className="text-[11px]" />
+          <img
+            src="/icons/user.png"
+            alt="experience"
+            className="w-[14px] h-[14px]"
+          />
           <span className="text-[16px]">1-3 yr Exp</span>
         </div>
         <div className="flex items-center gap-1">
-          <MdLocationOn className="text-[13px]" />
+          <img
+            src="/icons/location.png"
+            alt="location"
+            className="w-[14px] h-[14px]"
+          />
           <span className="text-[16px]">{job.location}</span>
         </div>
         <div className="flex items-center gap-1">
-          <GiMoneyStack className="text-[13px]" />
+          <img
+            src="/icons/money.png"
+            alt="salary"
+            className="w-[14px] h-[14px]"
+          />
           <span className="text-[16px]">{salaryLPA}LPA</span>
         </div>
       </div>
